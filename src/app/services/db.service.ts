@@ -9,7 +9,7 @@ export class DbService {
   constructor() {}
 
   async addUpdate(change: any) {
-    await this.localDb.put({ _id: new Date().toUTCString(), ...change });
+    await this.localDb.put(change);
   }
 
   async getAllData() {

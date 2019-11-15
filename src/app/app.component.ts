@@ -11,7 +11,7 @@ import { DbService } from './services/db.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  displayedColumns = ['EffectiveType', 'DL', 'RTT', 'Coords'];
+  displayedColumns = ['Date', 'EffectiveType', 'DL', 'RTT', 'Coords'];
   dataSource: ChangesDataSource = new ChangesDataSource();
   changes: any[] = [];
   ngOnInit(): void {

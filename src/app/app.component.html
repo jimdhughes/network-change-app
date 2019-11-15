@@ -13,7 +13,10 @@
           <table mat-table [dataSource]="dataSource" fxFlex>
             <!--- Note that these columns can be defined in any order.
                       The actual rendered columns are set as a property on the row definition" -->
-
+            <ng-container matColumnDef="Date">
+              <th mat-header-cell *matHeaderCellDef>Type</th>
+              <td mat-cell *matCellDef="let element">{{ element._id | date: 'short' }}</td>
+            </ng-container>
             <ng-container matColumnDef="TYPE">
               <th mat-header-cell *matHeaderCellDef>Type</th>
               <td mat-cell *matCellDef="let element">{{ element.type }}</td>
@@ -37,8 +40,10 @@
             <ng-container matColumnDef="Coords">
               <th mat-header-cell *matHeaderCellDef>Coords</th>
               <td mat-cell *matCellDef="let element">
-                {{ element.coords.lat | number: '1.2-2' }},
-                {{ element.coords.lon | number: '1.2-2' }}
+                <span *ngIf="element.coords">
+                  {{ element.coords.lat | number: '1.2-2' }},
+                  {{ element.coords.lon | number: '1.2-2' }}
+                </span>
               </td>
             </ng-container>
 
