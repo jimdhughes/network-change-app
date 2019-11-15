@@ -17,4 +17,6 @@ export class LeafletMapComponent implements OnInit {
   ngOnInit() {
     window.resizeTo(window.innerWidth, window.innerHeight);
   }
+
+  onAddPin() {}
 }
