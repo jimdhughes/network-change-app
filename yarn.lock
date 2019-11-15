@@ -237,6 +237,11 @@
   dependencies:
     tslib "^1.9.0"
 
+"@asymmetrik/ngx-leaflet@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@asymmetrik/ngx-leaflet/-/ngx-leaflet-6.0.1.tgz#0b2d3188c000bc4321bad6888b87a6f8bd29d9c4"
+  integrity sha512-8jYlmpXhPVUjjApfx136U5d+vhv10z0S4yeNLYGXHV8NSvTA9LiGzWki61udhQjBxeYcKjImKLOv3TV/N4Uz+Q==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
@@ -4893,6 +4898,11 @@ lcid@^2.0.0:
   integrity sha512-avPEb8P8EGnwXKClwsNUgryVjllcRqtMYa49NTsbQagYuT1DcXnl1915oxWjoyGrXR6zH/Y0Zc96xWsPcoDKeA==
   dependencies:
     invert-kv "^2.0.0"
+
+leaflet@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.5.1.tgz#9afb9d963d66c870066b1342e7a06f92840f46bf"
+  integrity sha512-ekM9KAeG99tYisNBg0IzEywAlp0hYI5XRipsqRXyRTeuU8jcuntilpp+eFf5gaE0xubc9RuSNIVtByEKwqFV0w==
 
 less-loader@5.0.0:
   version "5.0.0"

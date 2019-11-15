@@ -5,10 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { LeafletMapComponent } from './leaflet-map/leaflet-map.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
+  declarations: [AppComponent, LeafletMapComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    LeafletModule.forRoot()
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
