@@ -14,6 +14,7 @@ export class NetworkChangeService {
     this.connection =
       navigator['connection'] || navigator['mozConnection'] || navigator['webkitConnection'];
     this.connection.addEventListener('change', this.handleNetworkChange.bind(this));
+    this.handleNetworkChange();
   }
 
   log(x: string) {
