@@ -21,7 +21,7 @@ export class NetworkChangeService {
     console.log(x);
   }
 
-  handleNetworkChange() {
+  async handleNetworkChange() {
     const con = {
       saveData: this.connection.saveData,
       effectiveType: this.connection.effectiveType,
@@ -30,8 +30,8 @@ export class NetworkChangeService {
       rtt: this.connection.rtt,
       type: this.connection.type
     };
-    window.navigator.geolocation.getCurrentPosition(coords => {
-      this.db.addUpdate({
+    window.navigator.geolocation.getCurrentPosition(async coords => {
+      await this.db.addUpdate({
         ...con,
         coords: {
           lat: coords.coords.latitude,
